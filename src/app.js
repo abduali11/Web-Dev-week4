@@ -5,7 +5,7 @@ const app = express();
 
 app.use('/public', express.static('public'));
 
-app.use('/api/v1/', api);
+app.use('/api/v1', api);
 
 app.get('/', (req, res) => {
   res.send('Welcome to my REST API!');
