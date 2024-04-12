@@ -1,12 +1,12 @@
 {
-  "name": "web-sovelluskehitys(week4)",
+  "name": "week4",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000W\u0000e\u0000b\u0000-\u0000D\u0000e\u0000v\u0000-\u0000w\u0000e\u0000e\u0000k\u00004\u0000\r\u0000 \u0000",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js",
-    "start": "node app.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
