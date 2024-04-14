@@ -8,7 +8,6 @@ import {
   deleteCat,
 } from '../controllers/cat-controller.js';
 
-
 const catRouter = express.Router();
 
 const myStorage = multer.diskStorage({
