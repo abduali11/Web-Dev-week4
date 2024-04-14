@@ -15,9 +15,49 @@ Content-Disposition: form-data; name="owner"
 
 37
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
-Content-Disposition: form-data; name="file"; filename="vito.png"
+Content-Disposition: form-data; name="file"; filename="cat1.png"
 Content-Type: image/png
 
 < ./images/cat1.png
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
+
+### Upload a cat image
+POST http://localhost:3000/api/v1/cats
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="cat_name"
+
+Fluffy
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="owner"
+
+1
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="kissa3.png"
+Content-Type: image/jpeg
+
+< ./images/kissa3.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+
+### Upload vito cat image to backend
+POST http://localhost:3000/api/v1/cats
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="cat_name"
+
+Vito
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="owner"
+
+37
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="vito.png"
+Content-Type: image/png
+
+< ./images/vito.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
