@@ -7,6 +7,8 @@ import {
   removeUser,
 } from '../models/user-model.js';
 
+import Multer from 'multer';
+
 const userRouter = express.Router();
 
 userRouter
