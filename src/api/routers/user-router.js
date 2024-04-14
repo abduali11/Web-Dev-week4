@@ -8,6 +8,8 @@ import {
   deleteUser,
 } from '../controllers/user-controller.js';
 
+import Multer from 'multer';
+
 const userRouter = express.Router();
 
 userRouter.route('/').get(getuser).post(postUser);
