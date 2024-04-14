@@ -21,7 +21,6 @@ const myStorage = multer.diskStorage({
     const name = file.originalname;
     const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e5);
     console.log('UNIQUESUFFIX: ', uniqueSuffix);
-    // take name and remove symbols after last ".".
     const alteredname = file.originalname
       .split('.')
       .slice(0, -1)
@@ -29,7 +28,7 @@ const myStorage = multer.diskStorage({
       .replace(/,|-|_|'/gi, '')
       .toLowerCase();
     console.log('ALTEREDNAME: ', alteredname);
-    let extension = file.mimetype.split('/').pop(); // Or mimetype?
+    let extension = file.mimetype.split('/').pop();
     console.log('EXTENSION: ', extension);
     if (!['jpg', 'jpeg', 'png', 'gif'].includes(extension)) {
       extension = 'jpg';
